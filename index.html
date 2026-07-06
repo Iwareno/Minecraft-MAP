@@ -16,9 +16,7 @@
 
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
                 <li><a href="#sakuhin">作品紹介</a></li>
-                <li><a href="#kazamisi">ギャラリー</a></li>
             </ul>
         </nav>
     </header>
@@ -27,8 +25,9 @@
         <p>ここでは、私が作った街を紹介しています</p>
 
         <a href="#sakuhin" class="button">作品を見る</a>
+        <a href="#kazamisi">ギャラリー</a>
     </section>
-
+<main>
     <section class="works">
         <h2>作品紹介</h2>
         <section id="sakuhin"></section>
@@ -61,30 +60,56 @@
         
     </div>
     <ul>※画像をタップするとその街のギャラリーに飛びます</ul>
-    <section class="gallery">
+    <section class="gallery">    
         <h2>ギャラリー</h2>
-    </section>
 
     <div class="kazamisi">
     <section id="kazamisi">
     <h1>風見市</h1>
     <img src="images/IMG_2016.PNG" alt="風見市" class="detail-image">
     <p>メインストリート沿いに風見市ツインタワーや、繁華街、高層ビル群、マンションが並んでいる。</p>
-    <img src="images/IMG_2025.PNG" alt="緑ヶ丘駅前" class="pic-image">
-    <img src="images/IMG_2017.PNG" alt ="入口" class="pic-image">
     <p>一部の建物にしか内装はないが、市役所にある本でその建物の設定資料集を読むことができる。</p>
+    <img src="images/IMG_2025.PNG" alt="緑ヶ丘駅前" class="pic-image">
+    <img src="images/IMG_2017.PNG" alt ="高速道路上" class="pic-image">
+    <img src="images/IMG_2800.PNG" alt ="高速道路" class="pic-image">
+    
     </section>
+    <button class="accordion">
+        <span class="arrow">▶</span>
+        制作裏話
+    </button>
+    <div class="panel">
+        <p>
+            作り始めた経緯は、とあるyoutuberさんの現代都市制作の動画を見たことです。主に歩道を参考にしたので探したらわかるかも...?<br>
+            建物の何個かは実際に存在している建物を参考にして作られていて、色々探してみると面白いかも。<br>
+            作った理由はもう一つあり、建物やお店に設定をつけたかったというのもある。なので設定資料集が作られている。
+        </p>
     </div>
+    </div>
+
 
     <div class="nagigaoka">
     <section id="nagigaoka">
     <h1>凪ヶ丘</h1>
     <img src="images/IMG_2785.PNG" alt="凪ヶ丘" class="detail-image">
     <p>道が不規則になっていて路地多い、道には様々なお店が並んでおり毎日お祭りのような雰囲気を醸し出している。</p>
-    <img src="images/IMG_2790.JPG" alt ="入口" class="pic-image">
-    <img src="images/IMG_2776.JPG" alt ="入口" class="pic-image">
     <p>道や建物が段々となっていて街の立体感を出している。</p>
-</section>
+    <img src="images/IMG_2790.JPG" alt ="桜広場" class="pic-image">
+    <img src="images/IMG_2776.JPG" alt ="入口" class="pic-image">
+    <img src="images/IMG_2784.PNG" alt ="足湯" class="asi">
+    </section>
+        <button class="accordion">
+        <span class="arrow">▶</span>
+        制作裏話
+    </button>
+    <div class="panel">
+        <p>
+            主＆主の友達「こういう雰囲気大好き！！」<br>
+            元々少ししか作られていなかったが主の友達が「完成が楽しみ」と言われ制作を再開した街。<br>
+            画像にはないがその友達もこの街の制作に関わっている。<br>
+            スーパーフラットで制作しているため、地形も自作。(浮いてるのは許して...)
+        </p>
+    </div>
     </div>
 
     <div class="gamesquare">
@@ -92,12 +117,49 @@
     <h1>GameSquare</h1>
     <img src="images/IMG_1948.JPG" alt="GameSquare"  class="detail-image">
     <p>建物１つ１つに鬼ごっこや人狼、ボートレースなどのミニゲームがあり（他にもまだまだあるよ！）、壁を通るたび全く違う雰囲気の建物が出てくる。</p>
-    <img src="images/IMG_2690.PNG" alt ="入口" class="pic-image">
-    <img src="images/IMG_2618.PNG" alt ="入口" class="pic-image">
     <p>ミニゲーム以外にも温泉や肝試しも存在しており、観光するだけでも十分楽しむことができる。</p>
+    <img src="images/IMG_2690.PNG" alt ="第１エリア" class="pic-image">
+    <img src="images/IMG_2618.PNG" alt ="打たせ湯" class="pic-image">
+    <img src="images/IMG_2801.PNG" alt ="第３エリア" class="pic-image">
+    
     </section>
+        <button class="accordion">
+        <span class="arrow">▶</span>
+        制作裏話
+    </button>
+    <div class="panel">
+        <p>
+            Switch版マイクラでミニゲーム制作をしていたが、iPadに移行しワールドを引き継げなかったため新しく作ったマップ<br>
+            この現在マップだけ自作リソースパックを入れていて食べ物がオリジナルに変化している。<br>
+            第２エリアはSwitch版で作った街をリメイクして作られている。<br>
+            ちなみに温泉はコマンドで打たせ湯（画像２枚目）を作りたかったために制作された。
+        </p>
     </div>
-    <br><br>
+    </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+</main>
+
+<section class="staff">
+    <h2>制作スタッフ</h2>
+</section>
+<div>
+    <section class="saku">
+    <h4>
+    マップ制作：Iwareno(主)<br>
+    　　　　　：主の友達(凪ヶ丘)<br>
+    <br>
+    サイト制作：主＋チャッピー
+    </h4>
+    </section>
+</div>
+
+<section class="sakusya">
     <h3>作者から</h3>
     <p>ここまで見ていただきありがとうございます！<br>
         <br>
@@ -109,8 +171,19 @@
         マップ配布についてですが、<br>
         これについては、現在このマップを著作権に引っかからないよう修正しています。（マップにyoutubeより丸パクリした建築があるため）<br><br>
         完成を楽しみに待っていてください！
+        </p>
+</section>
 
-    </p>
+        <section class="kousinn">
+        <h2>更新履歴</h2>
+        <li>
+            2026/7/3ver1.0<br>：サイト公開<br><br>
+            2026/7/6ver1.1<br>：制作裏話追加<br>
+            ：更新履歴追加<br>
+            ：画像の追加
+        </li>
+        </section>
+
     <footer>
     <p>&copy; 2026 Iwareno. All rights reserved.</p>
     </footer>
