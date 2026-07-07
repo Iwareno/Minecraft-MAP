@@ -7,6 +7,7 @@ images.forEach(img => {
     img.addEventListener("click", () => {
         lightbox.style.display = "flex";
         lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
     });
 });
 
